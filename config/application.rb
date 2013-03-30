@@ -52,7 +52,6 @@ module BlogdiggityOrg
     config.assets.compress = true
 
     # Setting compressor currently doesn't work
-    config.assets.css_compressor = :yui
     config.assets.js_compressor = :uglifier
 
     # Generate digests for assets URLs
