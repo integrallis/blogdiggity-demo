@@ -56,5 +56,7 @@ module BlogdiggityOrg
 
     # Generate digests for assets URLs
     config.assets.digest = true
+    
+    config.assets.precompile += ['blogdiggity/blogdiggity.css', 'blogdiggity/blogdiggity.js']
   end
 end
