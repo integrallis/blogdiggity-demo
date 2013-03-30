@@ -11,7 +11,44 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130330215628) do
+ActiveRecord::Schema.define(:version => 20130330230047) do
+
+  create_table "blogdiggity_contributors", :force => true do |t|
+    t.string   "company"
+    t.string   "email"
+    t.string   "github_url"
+    t.string   "image"
+    t.string   "location"
+    t.string   "name"
+    t.string   "nickname"
+    t.string   "provider"
+    t.string   "repos_url"
+    t.string   "token"
+    t.string   "uid"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "blogdiggity_contributors", ["nickname"], :name => "index_blogdiggity_contributors_on_nickname", :unique => true
+
+  create_table "blogdiggity_pages", :force => true do |t|
+    t.integer  "repository_id"
+    t.string   "slug"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.boolean  "published"
+    t.datetime "published_at"
+  end
+
+  add_index "blogdiggity_pages", ["slug"], :name => "index_blogdiggity_pages_on_slug", :unique => true
+
+  create_table "blogdiggity_repositories", :force => true do |t|
+    t.integer  "contributor_id"
+    t.string   "name"
+    t.string   "sha"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
 
   create_table "widgets", :force => true do |t|
     t.string   "name"
