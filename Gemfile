@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 
-gem 'blogdiggity', :git => 'git@github.com:integrallis/blogdiggity.git'
+gem 'blogdiggity', :git => 'git://github.com/integrallis/blogdiggity.git'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

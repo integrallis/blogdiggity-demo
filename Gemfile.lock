@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:integrallis/blogdiggity.git
+  remote: git://github.com/integrallis/blogdiggity.git
   revision: 66adb27925222faa71e13c7a0bf203c844eda3eb
   specs:
     blogdiggity (0.1.0)
