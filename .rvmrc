@@ -1,1 +1,1 @@
-rvm use 2.0.0@blogdiggity.org --create
+rvm use 2.0.0@blogdiggity-demo --create
