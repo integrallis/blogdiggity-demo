@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/integrallis/blogdiggity.git
-  revision: 66adb27925222faa71e13c7a0bf203c844eda3eb
+  revision: d7f73eb3e517c0ea0bf8872b1b525a02472b0ee1 
   specs:
     blogdiggity (0.1.0)
       asciidoctor (~> 0.1.0)
